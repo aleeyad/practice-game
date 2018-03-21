@@ -1,0 +1,8 @@
+<%= @grid.join(" ") %>
+<form action="score" method="post" class="form-inline">
+	<p> what do you got?</p>
+	<input name="authenticity_token" type="hidden" value="token_value">
+	<input type="text" name="query" class="form control">
+	<input type="submit" value="Play!">
+	<input name="saved_grid" type="hidden" value="<%=@grid.join%>">
+</form>
